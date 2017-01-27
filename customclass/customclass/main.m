@@ -12,10 +12,15 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        MyClass *myclass=[MyClass alloc];
-        [myclass init];
+        MyClass *myclass=[[MyClass alloc]init];
         [myclass Setx:111];
         NSLog(@"%d",[myclass Getx]);
+        
+        [myclass setM_y:999];
+        NSLog(@"%d",[myclass m_y]);
+        
+        myclass.m_z=888;
+        NSLog(@"%d",myclass.m_z);
     }
     return 0;
 }

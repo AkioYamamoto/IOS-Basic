@@ -9,6 +9,8 @@
 #import "MyClass.h"
 
 @implementation MyClass
+@synthesize m_y,m_z;
+
 -(void)Setx:(int)x{
     m_x=x;
 }
