@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MyClass.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        MyClass *myclass=[MyClass alloc];
+        [myclass init];
+        [myclass Setx:111];
+        NSLog(@"%d",[myclass Getx]);
     }
     return 0;
 }
