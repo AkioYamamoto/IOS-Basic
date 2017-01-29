@@ -17,4 +17,7 @@
 -(int)Getx{
     return m_x;
 }
+-(void)showData{
+    NSLog(@"%d-%d-%d",m_x,m_y,m_z);
+}
 @end

@@ -7,20 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MyClass.h"
-
+#import "SubClass.h"
+#import "SubClass+in_out.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        MyClass *myclass=[[MyClass alloc]init];
+        SubClass *myclass=[[SubClass alloc]init];
         [myclass Setx:111];
-        NSLog(@"%d",[myclass Getx]);
-        
+                
         [myclass setM_y:999];
-        NSLog(@"%d",[myclass m_y]);
         
         myclass.m_z=888;
-        NSLog(@"%d",myclass.m_z);
+        [myclass showData];
+        
+        [myclass SetAllData:666];
+        [myclass ShowData];
     }
     return 0;
 }

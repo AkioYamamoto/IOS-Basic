@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		40345E541E3ADF9E00A6AA6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40345E531E3ADF9E00A6AA6E /* main.m */; };
 		40345E5C1E3AE37000A6AA6E /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 40345E5B1E3AE37000A6AA6E /* MyClass.m */; };
+		40345E5F1E3AF1F500A6AA6E /* SubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 40345E5E1E3AF1F500A6AA6E /* SubClass.m */; };
+		40345E621E3E1F6400A6AA6E /* SubClass+in_out.m in Sources */ = {isa = PBXBuildFile; fileRef = 40345E611E3E1F6400A6AA6E /* SubClass+in_out.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		40345E531E3ADF9E00A6AA6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40345E5A1E3AE37000A6AA6E /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
 		40345E5B1E3AE37000A6AA6E /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+		40345E5D1E3AF1F500A6AA6E /* SubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubClass.h; sourceTree = "<group>"; };
+		40345E5E1E3AF1F500A6AA6E /* SubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubClass.m; sourceTree = "<group>"; };
+		40345E601E3E1F6400A6AA6E /* SubClass+in_out.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SubClass+in_out.h"; sourceTree = "<group>"; };
+		40345E611E3E1F6400A6AA6E /* SubClass+in_out.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SubClass+in_out.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				40345E531E3ADF9E00A6AA6E /* main.m */,
 				40345E5A1E3AE37000A6AA6E /* MyClass.h */,
 				40345E5B1E3AE37000A6AA6E /* MyClass.m */,
+				40345E5D1E3AF1F500A6AA6E /* SubClass.h */,
+				40345E5E1E3AF1F500A6AA6E /* SubClass.m */,
+				40345E601E3E1F6400A6AA6E /* SubClass+in_out.h */,
+				40345E611E3E1F6400A6AA6E /* SubClass+in_out.m */,
 			);
 			path = customclass;
 			sourceTree = "<group>";
@@ -124,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40345E5F1E3AF1F500A6AA6E /* SubClass.m in Sources */,
+				40345E621E3E1F6400A6AA6E /* SubClass+in_out.m in Sources */,
 				40345E5C1E3AE37000A6AA6E /* MyClass.m in Sources */,
 				40345E541E3ADF9E00A6AA6E /* main.m in Sources */,
 			);

@@ -10,12 +10,14 @@
 
 @interface MyClass : NSObject{
     //@protected,@private,@public
-@private
-    int m_x,m_y,m_z;
+@protected
+    int m_x;
 }
 -(void)Setx:(int)x;
 -(int)Getx;
+-(void)showData;
 
-
+//(retain,nonautomic,assign,copy,readonly,readwrite)
 @property int m_y,m_z;
+
 @end
