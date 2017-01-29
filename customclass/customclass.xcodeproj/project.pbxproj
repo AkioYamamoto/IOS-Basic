@@ -34,6 +34,7 @@
 		40345E5E1E3AF1F500A6AA6E /* SubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubClass.m; sourceTree = "<group>"; };
 		40345E601E3E1F6400A6AA6E /* SubClass+in_out.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SubClass+in_out.h"; sourceTree = "<group>"; };
 		40345E611E3E1F6400A6AA6E /* SubClass+in_out.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SubClass+in_out.m"; sourceTree = "<group>"; };
+		40345E631E3E228300A6AA6E /* SettopBoxControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettopBoxControl.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 				40345E5D1E3AF1F500A6AA6E /* SubClass.h */,
 				40345E5E1E3AF1F500A6AA6E /* SubClass.m */,
 				40345E601E3E1F6400A6AA6E /* SubClass+in_out.h */,
+				40345E631E3E228300A6AA6E /* SettopBoxControl.h */,
 				40345E611E3E1F6400A6AA6E /* SubClass+in_out.m */,
 			);
 			path = customclass;

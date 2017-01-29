@@ -7,9 +7,9 @@
 //
 
 #import "MyClass.h"
-
+#import "SettopBoxControl.h"
 @interface SubClass : MyClass
-
+<SettopBoxControl>
 -(void)showData;
 
 

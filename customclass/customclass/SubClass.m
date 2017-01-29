@@ -9,8 +9,12 @@
 #import "SubClass.h"
 
 @implementation SubClass
+
 -(void)showData{
     [super showData];
     NSLog(@"%d",m_x);
+}
+-(void) action_Play{
+    NSLog(@"aaa");
 }
 @end

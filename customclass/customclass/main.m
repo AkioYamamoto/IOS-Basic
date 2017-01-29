@@ -22,6 +22,8 @@ int main(int argc, const char * argv[]) {
         
         [myclass SetAllData:666];
         [myclass ShowData];
+        
+        [myclass action_Play];
     }
     return 0;
 }
