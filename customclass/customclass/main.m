@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "SubClass.h"
 #import "SubClass+in_out.h"
+
+// - member method
+// + class method
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -24,6 +27,8 @@ int main(int argc, const char * argv[]) {
         [myclass ShowData];
         
         [myclass action_Play];
+        
+        NSNumber* aaa=[[NSNumber alloc]init];
     }
     return 0;
 }
