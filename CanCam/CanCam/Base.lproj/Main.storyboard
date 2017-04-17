@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="qNm-6s-lna">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QOM-GU-xzM">
+                                <rect key="frame" x="86" y="505" width="203" height="31"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqv-DJ-p0c">
+                                <rect key="frame" x="26" y="28" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" image="btn_video_setting_gray.png"/>
+                                <state key="highlighted" image="btn_video_setting.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWT-eM-fh3">
+                                <rect key="frame" x="319" y="28" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" image="btn_switch_camera_gray.png"/>
+                                <state key="highlighted" image="btn_switch_camera.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xd-DY-iwz">
+                                <rect key="frame" x="305" y="492" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" image="btn_switch_camera.png"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="92j-jK-qN1">
+                                <rect key="frame" x="247" y="107" width="166" height="31"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlq-bb-9e1">
+                                <rect key="frame" x="16" y="495" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" image="btn_switch_camera_gray.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="m_sBright" destination="92j-jK-qN1" id="fB8-0R-BhB"/>
+                        <outlet property="m_sContract" destination="QOM-GU-xzM" id="aYW-eX-zI3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Left View Controller-->
+        <scene sceneID="tqu-i3-Msl">
+            <objects>
+                <tableViewController storyboardIdentifier="LeftViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wqp-LW-MdV" customClass="LeftViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Gdb-2h-4Ra">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="668"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="ZmF-Fh-6Tp" customClass="LeftViewCell">
+                                <rect key="frame" x="0.0" y="22" width="250" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZmF-Fh-6Tp" id="VNO-E0-Lg7">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27h-QX-UeV" userLabel="Title Label">
+                                            <rect key="frame" x="8" y="4" width="234" height="35"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dvk-Uo-1Sq">
+                                            <rect key="frame" x="0.0" y="43" width="226" height="1"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="OOF-Dh-SxW"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="27h-QX-UeV" secondAttribute="trailing" constant="8" id="ICD-om-t0r"/>
+                                        <constraint firstItem="27h-QX-UeV" firstAttribute="top" secondItem="VNO-E0-Lg7" secondAttribute="top" constant="4" id="VHw-Mm-YHf"/>
+                                        <constraint firstItem="27h-QX-UeV" firstAttribute="leading" secondItem="VNO-E0-Lg7" secondAttribute="leading" constant="8" id="gBg-bv-GwJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Dvk-Uo-1Sq" secondAttribute="trailing" constant="24" id="kCy-xr-zsP"/>
+                                        <constraint firstItem="Dvk-Uo-1Sq" firstAttribute="top" secondItem="27h-QX-UeV" secondAttribute="bottom" constant="4" id="nPG-BV-d62"/>
+                                        <constraint firstItem="Dvk-Uo-1Sq" firstAttribute="leading" secondItem="VNO-E0-Lg7" secondAttribute="leading" id="r0Y-kK-YT3"/>
+                                        <constraint firstAttribute="bottom" secondItem="Dvk-Uo-1Sq" secondAttribute="bottom" id="tii-hT-kkJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="separatorView" destination="Dvk-Uo-1Sq" id="EJd-t4-NkZ"/>
+                                    <outlet property="titleLabel" destination="27h-QX-UeV" id="Haf-W9-edf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wqp-LW-MdV" id="n0r-nF-Uss"/>
+                            <outlet property="delegate" destination="Wqp-LW-MdV" id="Cej-uj-ofG"/>
+                        </connections>
+                    </tableView>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="250" height="668"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4WM-Uw-mQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-851" y="-165"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.png" width="225" height="225"/>
+        <image name="btn_switch_camera.png" width="114" height="101"/>
+        <image name="btn_switch_camera_gray.png" width="114" height="101"/>
+        <image name="btn_video_setting.png" width="112" height="112"/>
+        <image name="btn_video_setting_gray.png" width="112" height="112"/>
+    </resources>
+</document>
